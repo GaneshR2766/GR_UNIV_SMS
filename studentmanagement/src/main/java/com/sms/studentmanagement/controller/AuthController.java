@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class AuthController {
 
     private static final String ADMIN_USERNAME = "admin";
-    private static final String ADMIN_PASSWORD_HASH = BCrypt.hashpw("securePassword123!", BCrypt.gensalt(12));
+    private static final String ADMIN_PASSWORD_HASH = BCrypt.hashpw("securePassword123![its a local project so no hashing :)]", BCrypt.gensalt(12));
     
     private final Map<String, Integer> failedAttempts = new ConcurrentHashMap<>();
     private final Map<String, Long> lockedAccounts = new ConcurrentHashMap<>();
