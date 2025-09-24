@@ -1,0 +1,26 @@
+# Git ignore file 
+# === Maven / Gradle build ===
+target/
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# === Node / React build ===
+node_modules/
+dist/
+build/
+
+# === IDE files ===
+.idea/
+.vscode/
+*.iml
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+*.log
